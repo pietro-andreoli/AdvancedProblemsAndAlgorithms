@@ -1,0 +1,1 @@
+These are Java projects where I have developed my own implementation of common Data Structures and algorithms.
