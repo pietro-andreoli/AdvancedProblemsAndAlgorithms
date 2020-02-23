@@ -9,18 +9,26 @@ public class Main {
 		int[] test5 = {};
 		int[] test6 = { 3, 44, 38, 5, 47, 15, 36, 26, 27, 2, 46, 4, 19, 50, 48 };		
 		QuickSort qs = new QuickSort();
+		MergeSort ms = new MergeSort();
 		
-		compareSorts(qs, test6, "Test 6");
-		compareSorts(qs, test1, "Test 1");
-		compareSorts(qs, test2, "Test 2");
-		compareSorts(qs, test3, "Test 3");
-		compareSorts(qs, test4, "Test 4");
-		compareSorts(qs, test5, "Test 5");
+//		compareSorts(qs, test6, "Test 6");
+//		compareSorts(qs, test1, "Test 1");
+//		compareSorts(qs, test2, "Test 2");
+//		compareSorts(qs, test3, "Test 3");
+//		compareSorts(qs, test4, "Test 4");
+//		compareSorts(qs, test5, "Test 5");
+
+		compareSorts(ms, test6, "Test 7");
+		compareSorts(ms, test1, "Test 8");
+		compareSorts(ms, test2, "Test 9");
+		compareSorts(ms, test3, "Test 10");
+		compareSorts(ms, test4, "Test 11");
+		compareSorts(ms, test5, "Test 12");
 		
 		
 	}
 	
-	public static void compareSorts(QuickSort qs, int[] arr, String testName) {
+	public static void compareSorts(Sort qs, int[] arr, String testName) {
 		int[] qsArr = arr.clone();
 		int[] sortArr = arr.clone();
 		qs.sort(qsArr);
